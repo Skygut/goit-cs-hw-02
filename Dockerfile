@@ -1,10 +1,10 @@
 FROM python:3.12
 
-ENV APP_HOME \APP_HOME
+ENV APP_HOME /app 
 
 WORKDIR $APP_HOME
 
-COPY . . 
+COPY . .
 
 RUN pip install -r requirements.txt
 
